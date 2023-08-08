@@ -4,7 +4,7 @@ Através das Threads podemos executar tarefas em paralelo e para sua criação �
 O construtor da classe Thread recebe esse Runnable e devemos inicializar uma Thread explicitamente através do método start();
 O Thread.sleep(millis) podemos mandar uma thread "dormir".
 
-Java mapeia os Threads para o Sistema Operacional e a ordem de execução depende da JVM e não do nosso código
+Java mapeia os Threads para o Sistema Operacional e a ordem de execução depende da JVM e não do nosso código <p>
 <img src ="img/threads001.png" alt="mapa threads">
 
 Não temos controle sobre qual thread realmente começa a execução e para sincronizar o acesso ao objeto, utilizamos a palavra chave synchronized. Tudo que estiver dentro do bloco syncronized só poderá ser executado através de um único thread. <i>Como se todas as threads pudessem bater na porta pra serem executadas, mas so quem estiver na vez, ou seja, dentro do syncronized será executado</i>
